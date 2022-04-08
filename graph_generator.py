@@ -109,6 +109,7 @@ def main():
                 data_for_requests[match.group(4)][datetime_object] += 1
             else:
                 data_for_requests[match.group(4)] = generate_empty_datetime_dict(date_generated )
+                data_for_requests[match.group(4)][datetime_object] += 1
             
             if match.group(6) == "200":
                 data_for_sucsses_requests[datetime_object] += 1
